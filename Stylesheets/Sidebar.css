@@ -1,0 +1,20 @@
+
+#Sidebar{
+  display: grid;
+  grid-template-rows: 0.9fr repeat(7,1fr) 1.5fr;
+  grid-template-columns: 1fr;
+  background-color: var(--Panel_Colour);
+}
+
+#Sidebar > div{
+  --Size: 3vw;
+  --Margin: 2.5vw;
+  position: relative;
+  border: 1px solid cyan;
+  background-color: white;
+  height: var(--Size);
+  width: var(--Size);
+  left: calc(100% - var(--Size) - var(--Margin));
+  top: 10%;
+  background-color: var(--Panel_Colour);
+}

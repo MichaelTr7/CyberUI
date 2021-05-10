@@ -1,0 +1,109 @@
+
+*{
+  font-family: Orbitron_Medium;
+  color: white;
+}
+
+#Drive_Cluster{
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+#Speedometer{
+  grid-row: 1 / span 2;
+  background-color: var(--Panel_Colour);
+  overflow: hidden;
+}
+
+#Speedometer > div{
+  position: absolute;
+  font-size: 4.8vw;
+  font-family: Orbitron_Medium;
+  color: white;
+  background-color: var(--Panel_Colour);
+  top: 6%;
+  left: 3%;
+}
+
+#Speed_Units{
+  background-color: var(--Panel_Colour);
+}
+
+#Speed_Units > div{
+  position: relative;
+  top: 68%;
+  left: 11%;
+  font-size: 1.1vw;
+  background-color: var(--Panel_Colour);
+}
+
+#Flexible_Space_1{
+  grid-column: 3 / span 4;
+  background-color: var(--Panel_Colour);
+}
+
+#Themometer{
+  background-color: var(--Panel_Colour);
+  overflow: hidden;
+}
+
+#Themometer > div{
+  position: relative;
+  top: 68%;
+  left: 50%;
+  font-size: 1.1vw;
+  background-color: var(--Panel_Colour);
+}
+
+#Range_Indicator{
+  background-color: var(--Panel_Colour);
+  overflow: hidden;
+}
+
+#Range_Indicator > div{
+  position: relative;
+  top: 68%;
+  left: 22%;
+  font-size: 1.1vw;
+  background-color: var(--Panel_Colour);
+}
+
+#Clock{
+  background-color: var(--Panel_Colour);
+  overflow: hidden;
+}
+
+#Clock > div{
+  position: relative;
+  top: 68%;
+  left: 6%;
+  font-size: 1.1vw;
+  background-color: var(--Panel_Colour);
+}
+
+#Selector_Indicator{
+  background-color: var(--Panel_Colour);
+}
+
+#Selector_Indicator > div{
+  font-size: 1.1vw;
+  background-color: var(--Panel_Colour);
+}
+
+#Selector_Indicator > div{
+  position: relative;
+  font-size: 1.1vw;
+  top: 20%;
+  left: 11%;
+  background-color: var(--Panel_Colour);
+}
+
+#Flexible_Space_2{
+  grid-column: 3 / span 7;
+  background-color: var(--Panel_Colour);
+}
+
+#Selector_Indicator > div{
+  float: left;
+}

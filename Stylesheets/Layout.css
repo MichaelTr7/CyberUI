@@ -1,0 +1,38 @@
+
+:root{
+  --Drive_Cluster_Height: 17.5%;
+  --Sidebar_Width: 9.5%;
+  --Dynamic_Panel_Width: 47.4%;
+}
+
+#Drive_Cluster{
+  height: var(--Drive_Cluster_Height);
+  width: 100%;
+}
+
+#Sidebar{
+  float: left;
+  height: calc(100% - var(--Drive_Cluster_Height));
+  width: var(--Sidebar_Width);
+}
+
+#Dynamic_Panel{
+  float: left;
+  height: calc(100% - var(--Drive_Cluster_Height));
+  width: var(--Dynamic_Panel_Width);
+}
+
+#Drive_Visualization{
+  float: left;
+  height: calc(100% - var(--Drive_Cluster_Height));
+  width: calc(100% - var(--Sidebar_Width) - var(--Dynamic_Panel_Width));
+  background-color: var(--Panel_Colour);
+}
+
+
+
+
+
+
+
+

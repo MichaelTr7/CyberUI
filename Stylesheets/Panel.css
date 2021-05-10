@@ -1,0 +1,38 @@
+
+body{
+  background-color: rgb(0,0,0);
+  margin: 0;
+}
+ 
+#Main_Panel{
+  --Aspect_Ratio: calc(2869.85/1734.78);
+  --Scaling_Factor: 1;
+  --Smallest_Dimension: min(100vh,100vw); 
+  --Margin: 3rem;
+  --Width: calc(var(--Scaling_Factor)*(100vw - 2*var(--Margin)));
+  --Height: calc(var(--Scaling_Factor)*(1/var(--Aspect_Ratio)*var(--Width)));
+
+  position: absolute;
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(50% - var(--Height)/2);
+  left: calc(50% - var(--Width)/2);
+
+  background-color: var(--Panel_Colour);
+  background-image: url("../Assets/Cybertruck_UI_Reference.png");
+  background-size: cover;
+  border-radius: 0.75rem;
+  
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+ 

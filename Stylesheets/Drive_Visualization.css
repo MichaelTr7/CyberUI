@@ -1,0 +1,29 @@
+
+
+#Music_Container{
+  position: relative;
+  --Width: 100%;
+  --Height: calc(var(--Width)/6);
+  --Bottom_Margin: 5%;
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(100% - var(--Height) - var(--Bottom_Margin));
+  left: calc(50% - var(--Width)/2);  
+  /* border: 1px solid white; */
+  overflow: hidden;
+}
+  
+  
+#Music_Snippet{
+  position: relative;
+  --Height: max(100%,5rem);
+  --Width: max(100%,20rem);
+  height: var(--Height);
+  width: var(--Width);
+  transform: scale(0.6);
+  top: calc(50% - var(--Height)/2);
+  left: calc(50% - var(--Width)/2);
+  box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0,0,0,0.2);
+  filter: opacity(0.8);
+}
+  
