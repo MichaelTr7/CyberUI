@@ -13,7 +13,6 @@
   overflow: hidden;
 }
   
-  
 #Music_Snippet{
   position: relative;
   --Height: max(100%,5rem);
@@ -22,8 +21,99 @@
   width: var(--Width);
   transform: scale(0.6);
   top: calc(50% - var(--Height)/2);
-  left: calc(50% - var(--Width)/2);
+  left: calc(46% - var(--Width)/2);
   box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0,0,0,0.2);
-  filter: opacity(0.8);
+  filter: brightness(0.5);
 }
-  
+
+#Drive_Container{
+  position: absolute;
+  --Height: 85%;
+  --Width: 60%;
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(100% - var(--Height));
+  left: calc(78% - var(--Width)/2);
+  background-image: url("../Assets/Road_Lines.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Horizontal_Lines{
+  position: absolute;
+  height: 0.2vw;
+  background: linear-gradient(90deg, rgba(196, 196, 196, 0) 0%, rgba(255,255,255,0.05) 10%, rgba(255,255,255,0.05) 90%, rgba(196, 196, 196, 0) 100%);
+
+}
+
+.Horizontal_Line_1{
+  top: 2%;
+  --Width: 46%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_2{
+  top: 7%;
+  --Width: 50%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_3{
+  top: 13%;
+  --Width: 54%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_4{
+  top: 20%;
+  --Width: 59%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_5{
+  top: 28%;
+  --Width: 64%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_6{
+  top: 37%;
+  --Width: 70%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_7{
+  top: 47%;
+  --Width: 77%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_8{
+  top: 58%;
+  --Width: 85%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Horizontal_Line_9{
+  top: 70%;
+  --Width: 90%;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+}
+
+
+
+
+
+
+
+
