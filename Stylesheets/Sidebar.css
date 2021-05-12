@@ -10,11 +10,59 @@
   --Size: 3vw;
   --Margin: 2.5vw;
   position: relative;
-  border: 1px solid cyan;
   background-color: white;
   height: var(--Size);
   width: var(--Size);
   left: calc(100% - var(--Size) - var(--Margin));
   top: 10%;
   background-color: var(--Panel_Colour);
+  background-size: cover;
+  background-position: center;
 }
+
+.Sidebar_Icons{
+  filter: opacity(0.5);
+}
+
+#Sidebar > div:nth-child(1){
+  background-image: url("../Assets/LOCATION_ICON.svg");
+}
+
+#Sidebar > div:nth-child(2){
+  background-image: url("../Assets/CONTROLLER_ICON.svg");
+}
+
+#Sidebar > div:nth-child(3){
+  background-image: url("../Assets/WIPER_ICON.svg");
+}
+
+#Sidebar > div:nth-child(4){
+  background-image: url("../Assets/DEFROST_ICON.svg");
+}
+
+#Sidebar > div:nth-child(5){
+  background-image: url("../Assets/60_ICON.svg");
+}
+
+#Sidebar > div:nth-child(6){
+  background-image: url("../Assets/FAN_ICON.svg");
+}
+
+#Sidebar > div:nth-child(7){
+  background-image: url("../Assets/TRACTION_ICON.svg");
+}
+
+#Sidebar > div:nth-child(8){
+  background-image: url("../Assets/STACKS_ICON.svg");
+}
+
+#Sidebar > div:nth-child(9){
+  background-image: url("../Assets/MUSIC_ICON.svg");
+}
+
+
+
+
+
+
+

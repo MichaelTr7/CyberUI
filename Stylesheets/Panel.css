@@ -19,7 +19,6 @@ body{
   left: calc(50% - var(--Width)/2);
 
   background-color: var(--Panel_Colour);
-  background-image: url("../Assets/Cybertruck_UI_Reference.png");
   background-size: cover;
   border-radius: 0.75rem;
   

@@ -107,3 +107,9 @@
 #Selector_Indicator > div{
   float: left;
 }
+
+.Drive_Selectors{
+  filter: opacity(0.5);
+}
+  
+  

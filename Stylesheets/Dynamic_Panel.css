@@ -20,6 +20,7 @@
   background-position: 50% 100%;
   background-repeat: no-repeat;
   background-color: var(--Panel_Colour);
+  filter: opacity(0.5);
 }
 
 .Tabs:nth-child(1){
@@ -353,8 +354,8 @@
 
 .Lights_Buttons{
   background-repeat: no-repeat;
+  filter: opacity(0.5);
 }
-
 
 #Lights_Button_1{
   background-image: url("../Assets/AUTO.svg");
@@ -380,6 +381,14 @@
   background-position: 12% 61%;
 }
 
+#Weight_Toggle_Container > div{
+}
+
+.Weight_Buttons{
+  filter: opacity(0.5);
+}
+
+
 #Weight_Toggle_Container > div:nth-child(1){
   background-image: url("../Assets/LOW.svg");
   background-size: auto 6.9vw;
@@ -400,6 +409,14 @@
   background-position: 0% 85%;
   background-repeat: no-repeat;
 }
+
+#Tonneau_Toggle_Container > div{
+}
+
+.Tonneau_Buttons{
+  filter: opacity(0.5);
+}
+
 
 #Tonneau_Toggle_Container > div:nth-child(1){
   background-image: url("../Assets/DEPLOY.svg");
@@ -487,6 +504,9 @@
   background-position:  50% 0%;
 }
 
+#Bottom_LED_2{
+  filter: opacity(0.5);
+}
 
 
 
