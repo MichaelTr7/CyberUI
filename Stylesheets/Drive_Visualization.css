@@ -9,7 +9,6 @@
   width: var(--Width);
   top: calc(100% - var(--Height) - var(--Bottom_Margin));
   left: calc(50% - var(--Width)/2);  
-  /* border: 1px solid white; */
   overflow: hidden;
 }
   
@@ -21,12 +20,12 @@
   width: var(--Width);
   transform: scale(0.6);
   top: calc(50% - var(--Height)/2);
-  left: calc(46% - var(--Width)/2);
+  left: calc(48.3% - var(--Width)/2);
   box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0,0,0,0.2);
   filter: brightness(0.5);
 }
 
-#Drive_Container{
+#Drive_Container,#Cybertruck_Preview{
   position: absolute;
   --Height: 85%;
   --Width: 60%;
@@ -34,11 +33,22 @@
   width: var(--Width);
   top: calc(100% - var(--Height));
   left: calc(78% - var(--Width)/2);
+}
+
+#Drive_Container{
   background-image: url("../Assets/Road_Lines.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#Cybertruck_Preview{
+  z-index: 1;
+  background-image: url("../Assets/CYBERTRUCK.svg");
+  background-size: 40%;
+  background-position: 50% 26%;
+  background-repeat: no-repeat;
+}  
 
 .Horizontal_Lines{
   position: absolute;
