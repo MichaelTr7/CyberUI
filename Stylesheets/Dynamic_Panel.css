@@ -21,6 +21,7 @@
   background-repeat: no-repeat;
   background-color: var(--Panel_Colour);
   filter: opacity(0.5);
+  z-index: 2;
 }
 
 .Tabs:nth-child(1){

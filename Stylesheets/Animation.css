@@ -2,3 +2,7 @@
 .Highlight_Button{
   filter: opacity(1);
 }
+
+.Drive_Selectors:hover,.Tabs:hover,.Sidebar_Icons:hover,.Lights_Buttons:hover,.Weight_Buttons:hover,.Tonneau_Buttons:hover{
+  /* transform: scale(1.2); */
+}

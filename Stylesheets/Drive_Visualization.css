@@ -120,10 +120,47 @@
   left: calc(50% - var(--Width)/2);
 }
 
+:root{
+  --Headlight_Width: 5vw;
+}
 
+.Headlights{
+  position: absolute;
+  top: 14%;
+  height: calc(var(--Headlight_Width));
+  width: var(--Headlight_Width);
+  border-radius: 100%;
+  background-color: rgba(255,255,255,0.9);
+  filter: blur(2vw);
+  opacity: 1;
+}
 
+.Headlights:nth-child(1){
+  left: calc(50% - var(--Headlight_Width) - 6%);
+}
 
+.Headlights:nth-child(2){
+  left: calc(50% + var(--Headlight_Width)/2 + 1%);
+}
 
+#Rectangle_Headlight,#Red_Spotlight{
+  position: absolute;
+  --Width: 14vw;
+  height: 5vw;
+  width: var(--Width);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 25%, rgba(255,255,255,0.5) 100%);
+  top: 3%;
+  left: calc(50% - var(--Width)/2);
+  filter: blur(2vw);
+}
 
-
-
+#Red_Spotlight{
+  top: 63%;
+  --Width: 8vw;
+  height: 1.2vw;
+  width: var(--Width);
+  left: calc(50% - var(--Width)/2);
+  background-color: rgba(255,0,0,0.8);
+  filter: blur(1.1vw);
+  
+}
