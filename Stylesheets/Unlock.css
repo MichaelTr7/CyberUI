@@ -1,0 +1,44 @@
+
+#Unlock_Model{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0,0,0);
+  z-index: 5;
+  opacity: 1;
+}
+
+#Slide_Cavity{
+  -webkit-appearance: none;
+  appearance: none;
+  --Height: 2.7rem;
+  --Width: 15rem;
+  --Bottom_Spacer: 3rem;
+  height: var(--Height);
+  width: var(--Width);
+  padding: 0.3rem;
+
+  position: absolute;
+  left: calc(50% - var(--Width)/2);
+  top: calc(100% - var(--Height) - var(--Bottom_Spacer));
+  
+  border-radius: 0.5rem;
+  background: var(--Secondary_Gray);
+  outline: none;
+}
+
+#Slide_Cavity::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  --Height: 2.7rem;
+  --Width: 4rem;
+  width: var(--Width);
+  height: var(--Height);
+  background-color: rgb(0,0,0);
+  border-radius: 0.5rem;
+  }
+  
+  
+  
+  
+  
