@@ -1,5 +1,5 @@
 
-#Unlock_Model{
+#Unlock_Modal{
   position: absolute;
   height: 100vh;
   width: 100vw;
@@ -8,12 +8,20 @@
   opacity: 1;
 }
 
+.Unlock_It{
+  animation: Unlock_Keyframes 1s forwards;
+}
+
+@keyframes Unlock_Keyframes {
+  to{opacity: 0;}
+}
+
 #Slide_Cavity{
   -webkit-appearance: none;
   appearance: none;
   --Height: 2.7rem;
   --Width: 15rem;
-  --Bottom_Spacer: 3rem;
+  --Bottom_Spacer: 5rem;
   height: var(--Height);
   width: var(--Width);
   padding: 0.3rem;
@@ -25,6 +33,7 @@
   border-radius: 0.5rem;
   background: var(--Secondary_Gray);
   outline: none;
+  transition: 0.5s;
 }
 
 #Slide_Cavity::-webkit-slider-thumb {

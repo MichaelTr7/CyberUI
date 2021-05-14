@@ -11,7 +11,7 @@ body{
   --Aspect_Ratio: calc(2869.85/1734.78);
   --Scaling_Factor: 1;
   --Smallest_Dimension: min(100vh,100vw); 
-  --Margin: 3rem;
+  --Margin: 5rem;
   --Width: calc(var(--Scaling_Factor)*(100vw - 2*var(--Margin)));
   --Height: calc(var(--Scaling_Factor)*(1/var(--Aspect_Ratio)*var(--Width)));
 
