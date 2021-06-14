@@ -115,13 +115,6 @@
   filter: opacity(0.5);
 }
 
-#Icon{
-  position: absolute;
-  top: -15%;
-  height: 5vw;
-  width: 5vw;
-  border: 0.1px solid cyan;
-  z-index: 2;
-}
+
   
   

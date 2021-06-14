@@ -7,7 +7,9 @@ function Light_Up_Animation_Callbacks(){
   let Light_Tabs = document.getElementsByClassName('Lights_Buttons');
   let Weight_Tabs = document.getElementsByClassName('Weight_Buttons');
   let Tonneau_Tabs = document.getElementsByClassName('Tonneau_Buttons');
-
+  let Light_Toggle_Buttons = document.getElementsByClassName('Lights_Buttons');
+  let Weight_Toggle_Buttons = document.getElementsByClassName('Weight_Buttons');
+  let Independent_Light_Toggles = document.getElementsByClassName('Independent_Light_Toggles');
   
   for(Index = 0; Index < Drive_Tabs.length; Index++){
     Drive_Tabs[Index].addEventListener("click",Drive_Tab_Clicked);
@@ -33,13 +35,24 @@ function Light_Up_Animation_Callbacks(){
     Tonneau_Tabs[Index].addEventListener("click",Tonneau_Tab_Clicked);
   }
   
+  for(Index = 0; Index < Light_Toggle_Buttons.length; Index++){
+    Light_Toggle_Buttons[Index].addEventListener("click",Toggle_Car_Lights);
+  }
+  
+  for(Index = 0; Index < Weight_Toggle_Buttons.length; Index++){
+    Weight_Toggle_Buttons[Index].addEventListener("click",Toggle_Car_Weight);
+  }
+  
+  for(Index = 0; Index < Independent_Light_Toggles.length; Index++){
+    Independent_Light_Toggles[Index].addEventListener("click",Toggle_Light_Function);
+  }
+  
   /*Initial States*/
   Drive_Tabs[3].classList.add('Highlight_Button');
   Menu_Tabs[0].classList.add('Highlight_Button');
   Sidebar_Tabs[1].classList.add('Highlight_Button');
   Light_Tabs[1].classList.add('Highlight_Button');
   Weight_Tabs[1].classList.add('Highlight_Button');
-  
 }
 
 function Drive_Tab_Clicked(){
@@ -49,7 +62,6 @@ function Drive_Tab_Clicked(){
   }
   this.classList.toggle('Highlight_Button');
 }
-
 
 function Menu_Tab_Clicked(){
   let Menu_Tabs = document.getElementsByClassName('Tabs');
@@ -90,6 +102,39 @@ function Tonneau_Tab_Clicked(){
   }
   this.classList.toggle('Highlight_Button');     
 }
+
+function Toggle_Car_Lights(){
+  let Functions = ["AUTO","ON","OFF","BED"];
+  let Index = parseInt(String(this.id).split("Lights_Button_")[1]) - 1;
+  let Light_Function = Functions[Index];
+  let Front_Headlights = document.getElementsByClassName('Headlights');
+    switch(Light_Function) {
+    case "AUTO":
+      break;
+    case "ON":
+      break;
+    case "OFF":
+      break;
+    case "BED":
+      break;  
+    default:  
+  }
+}
+
+function Toggle_Car_Weight(){
+  let Functions = ["LOW","STANDARD","HIGH"];
+  let Index = parseInt(String(this.id).split("Lights_Button_")[1]) - 1;
+  let Weight_Function = Functions[Index];
+  console.log(Weight_Function);  
+}
+
+function Toggle_Light_Function(){
+  console.log("Toggle light function");
+}
+
+
+
+
 
 
 

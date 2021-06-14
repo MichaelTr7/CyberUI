@@ -23,6 +23,7 @@
   left: calc(48.3% - var(--Width)/2);
   box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0,0,0,0.2);
   filter: brightness(0.5);
+  z-index: 5;
 }
 
 #Drive_Container,#Cybertruck_Preview{
@@ -141,6 +142,12 @@
 
 .Headlights:nth-child(2){
   left: calc(50% + var(--Headlight_Width)/2 + 1%);
+}
+
+.Headlights_OFF{
+  display: none;
+  opacity: 0;
+  /* filter: blur(0vw); */
 }
 
 #Rectangle_Headlight,#Red_Spotlight{

@@ -24,7 +24,7 @@ body{
   background-color: var(--Panel_Colour);
   background-size: cover;
   border-radius: 0.75rem;
-  
+  border: 0.1vw solid rgb(38,38,38);
   overflow: hidden;
   
 }

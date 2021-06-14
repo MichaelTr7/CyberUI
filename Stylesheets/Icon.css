@@ -1,0 +1,16 @@
+
+#Icon{
+  --Icon_Height: 5vw;
+  --Icon_Width: 5vw;
+  position: absolute;
+  top: 1vw;
+  left: calc(50% - var(--Icon_Width)/2);
+  height: var(--Icon_Height);
+  width: var(--Icon_Width);
+  position: absolute;
+  z-index: 2;
+  background-image: url("../Assets/Tesla_Icon.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+}

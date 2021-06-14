@@ -14,12 +14,12 @@
   height: 100%;
   width: 100%;
 }
-
+ 
 .Tabs{
   background-size: 90%;
   background-position: 50% 100%;
   background-repeat: no-repeat;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
   filter: opacity(0.5);
   z-index: 2;
 }
@@ -60,7 +60,7 @@
   background-repeat: no-repeat;
   background-size: 91%;
   background-position: 100% 50%;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
   
 .Brightness_Tab{
@@ -78,7 +78,7 @@
 #Spacer_1{
   grid-row: 4 / span 1; 
   grid-column: 1 / span 1;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 .Weight_Tab{
@@ -102,13 +102,13 @@
 #Spacer_2{
   grid-row: 8 / span 1; 
   grid-column: 1 / span 1;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 #Brightness_Container{
   grid-row: 2 / span 1;
   grid-column: 2 / span 5;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 #Lights_Toggle_Container{
@@ -164,7 +164,7 @@
 }
 
 #Lights_Toggle_Container > div{
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 #Lights_Button_5{
@@ -180,7 +180,7 @@
   top: 10%;
   left: calc(100% - var(--Width) - var(--Margin));
   border: 0.2vw solid white;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 #Lights_Button_6{
@@ -196,7 +196,7 @@
   top: 10%;
   left: calc(var(--Margin));
   border: 0.2vw solid white;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 .Switch_Indicator_Rail{
@@ -276,7 +276,7 @@
 }
 
 #Weight_Toggle_Container > div{
- background-color: var(--Panel_Colour);
+ /* background-color: var(--Panel_Colour); */
 }
 
 .Weight_LEDs{
@@ -308,7 +308,7 @@
 }
 
 #Tonneau_Toggle_Container > div{
- background-color: var(--Panel_Colour);
+ /* background-color: var(--Panel_Colour); */
  overflow: hidden; 
 }
 
@@ -341,7 +341,7 @@
 
 #Bottom_Indicators_Container > div{
   overflow: hidden;
-  background-color: var(--Panel_Colour);  
+  /* background-color: var(--Panel_Colour);   */
 }
 
 .Bottom_LEDs{  
@@ -377,6 +377,7 @@
 }
 
 #Lights_Button_4{
+  background-repeat: no-repeat;
   background-image: url("../Assets/BED.svg");
   background-size: auto 6.9vw;
   background-position: 12% 61%;
@@ -462,7 +463,7 @@
 #Volume_Toggle_Container{
   display: grid;
   grid-template-rows: 1.3fr 1fr;
-  background-color: var(--Panel_Colour);
+  /* background-color: var(--Panel_Colour); */
 }
 
 .Value_Indicators{
@@ -496,7 +497,6 @@
   background-position: 0% 0%;
 } */
 
-
 .Slider_Container_1{
   background-position:  25% 0%;
 }
@@ -509,6 +509,9 @@
   filter: opacity(0.5);
 }
 
+#Dynamic_Panel > div{
+  z-index: 5;
+}
 
 
 
