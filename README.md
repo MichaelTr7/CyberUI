@@ -7,7 +7,6 @@
   </a>
 </p>
 
-<p align="right">
-  Disclaimer: Created for educational and experimental purposes.
-  <sub><sup>combining the two tags</sup></sub>
+<p align="center">
+  <sub><sup>Disclaimer: Created for educational and experimental purposes.</sup></sub>
 </p>
