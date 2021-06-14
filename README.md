@@ -7,6 +7,6 @@
   </a>
 </p>
 
-<p align="center">
+<p align="right">
   <sub><sup>Disclaimer: Created for educational and experimental purposes.</sup></sub>
 </p>
