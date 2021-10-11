@@ -3,33 +3,32 @@ function Slide_To_Unlock_Callback(){
   document.getElementById('Slide_Cavity').value = "0";
   document.getElementById('Slide_Cavity').addEventListener("input",Check_Full_Slide);
   document.getElementById('Slide_Cavity').addEventListener("change",Snap_Back);
-
-  
 }
 
 function Snap_Back(){
   if(parseInt(this.value) < 100){
       this.value = 0;
       var Root = document.querySelector(':root');
-      this.style.backgroundColor = getComputedStyle(Root).getPropertyValue('--Secondary_Gray');
+      this.style.backgroundColor = "transparent";
   }else{
-    // console.log("UNLOCK");
+    console.log("UNLOCK");
     let Unlock_Modal = document.getElementById('Unlock_Modal');
     Unlock_Modal.classList.add('Unlock_It');
     setTimeout(function () {
       Unlock_Modal.remove();
       let Slider = document.getElementById('Slide_Cavity');
-      Slider.value = "0";
     }, 1000);
   }
 }
 
 function Check_Full_Slide(){
+  console.log("Sliding");
+  
   if(parseInt(this.value) ==  100){
     this.style.backgroundColor = "white";
   }else{
     var Root = document.querySelector(':root');
-    this.style.backgroundColor = getComputedStyle(Root).getPropertyValue('--Secondary_Gray');
+    this.style.backgroundColor = "transparent";
   }
 }
 
