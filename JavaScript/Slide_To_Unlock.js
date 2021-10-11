@@ -6,10 +6,14 @@ function Slide_To_Unlock_Callback(){
 }
 
 function Snap_Back(){
+  let Slide_To_Unlock_Label = document.getElementById("Slide_To_Unlock_Label");
+  Slide_To_Unlock_Label.classList.remove("Fade_In_Snap_Animation");
+  void Slide_To_Unlock_Label.offsetWidth;
   if(parseInt(this.value) < 100){
       this.value = 0;
       var Root = document.querySelector(':root');
       this.style.backgroundColor = "transparent";
+      Slide_To_Unlock_Label.classList.add("Fade_In_Snap_Animation");
   }else{
     console.log("UNLOCK");
     let Unlock_Modal = document.getElementById('Unlock_Modal');
@@ -22,9 +26,14 @@ function Snap_Back(){
 }
 
 function Check_Full_Slide(){
-  console.log("Sliding");
-  
-  if(parseInt(this.value) ==  100){
+  let Slide_To_Unlock_Label = document.getElementById("Slide_To_Unlock_Label");
+  Slide_To_Unlock_Label.classList.remove("Fade_In_Snap_Animation");
+  void Slide_To_Unlock_Label.offsetWidth;
+  let Slider_Value = parseInt(this.value);
+  let Opacity = Math.pow((100 - Slider_Value)/100,3.5);
+  Slide_To_Unlock_Label.style.opacity = Opacity; 
+
+  if(Slider_Value ==  100){
     this.style.backgroundColor = "white";
   }else{
     var Root = document.querySelector(':root');

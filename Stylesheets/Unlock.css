@@ -32,7 +32,7 @@
     --Padding: 0.3rem;
     padding: var(--Padding);
     position: fixed;
-    left: calc(50% - var(--Width)/2 + var(--Padding)/2.3);
+    left: calc(50% - var(--Width)/2 + var(--Padding)/2);
     top: calc(100% - var(--Height) - var(--Bottom_Spacer) + var(--Padding)/2);
     border-radius: 0.5rem;
     box-sizing: content-box;
@@ -44,7 +44,7 @@
 #Slide_To_Unlock_Label{
   padding-right: 1rem;
   color: white;
-  animation: Pulsing_Keyframes 1s infinite alternate;
+  /* animation: Pulsing_Keyframes 1s infinite alternate; */
 }
 
 
@@ -85,6 +85,7 @@
   background-repeat: no-repeat;
   /* animation: 1s Pulsing_Keyframes infinite alternate; */
   border: none;
+  animation: Bouncing_Keyframes 1s alternate infinite ease;
 }
 
 #Slide_Cavity::-moz-range-thumb{
@@ -101,6 +102,14 @@
   background-position: 52% 50%;
   background-repeat: no-repeat;
   border: none;
+  animation: Bouncing_Keyframes 1s alternate infinite ease;
+}
+
+
+@keyframes Bouncing_Keyframes {
+    0%{transform: scale(1);}
+    50%{transform: scale(1);}
+    100%{transform: scale(1.05);}
 }
   
 
@@ -108,6 +117,17 @@
   0%{filter: opacity(1);}
   100%{filter: opacity(0.4);}
 }
+
+.Fade_In_Snap_Animation{
+  animation: Fade_In_Snap_Keyframes 0.2s ease forwards;
+}
+
+
+@keyframes Fade_In_Snap_Keyframes {
+  to{opacity: 1;}
+}
+
+
 
 
 :root{
