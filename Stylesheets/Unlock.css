@@ -8,14 +8,6 @@
   opacity: 1;
 }
 
-.Unlock_It{
-  animation: Unlock_Keyframes 1s forwards ease;
-}
-
-@keyframes Unlock_Keyframes {
-  to{opacity: 0;}
-}
-
 #Slide_Cavity_Background{
     display: flex;
     align-items: center;
@@ -44,9 +36,7 @@
 #Slide_To_Unlock_Label{
   padding-right: 1rem;
   color: white;
-  /* animation: Pulsing_Keyframes 1s infinite alternate; */
 }
-
 
 #Slide_Cavity{
   -webkit-appearance: none;
@@ -63,11 +53,6 @@
   background-color: transparent;
   outline: none;
   transition: 0.5s;
-  /* box-shadow: inset 0.1rem 0.1rem 0rem 0rem rgba(0,0,0,0.2), inset -0.05rem -0.05rem 0.1rem 0.01rem rgba(255,255,255,0.3); */
-  /* background-image: linear-gradient(45deg, var(--Secondary_Gray) 25%, transparent 25%, transparent 75%, var(--Secondary_Gray) 75%, var(--Secondary_Gray)), linear-gradient(45deg, var(--Secondary_Gray) 25%, transparent 25%, transparent 75%, var(--Secondary_Gray) 75%, var(--Secondary_Gray)), linear-gradient(to bottom, rgb(110, 110, 110), rgb(110, 110, 110));
-  --Carbon_Texture_Size: 2.5px;
-  background-size: var(--Carbon_Texture_Size) var(--Carbon_Texture_Size), var(--Carbon_Texture_Size) var(--Carbon_Texture_Size), var(--Carbon_Texture_Size) calc(var(--Carbon_Texture_Size)/2);
-  background-position: 0 0, calc(var(--Carbon_Texture_Size)/2) calc(var(--Carbon_Texture_Size)/2), 0 0; */
 }
 
 #Slide_Cavity::-webkit-slider-thumb{
@@ -83,7 +68,6 @@
   background-size: 50%;
   background-position: 52% 50%;
   background-repeat: no-repeat;
-  /* animation: 1s Pulsing_Keyframes infinite alternate; */
   border: none;
   animation: Bouncing_Keyframes 1s alternate infinite ease;
 }
@@ -105,6 +89,23 @@
   animation: Bouncing_Keyframes 1s alternate infinite ease;
 }
 
+#CYBERTRUCK_KEYPAD{
+  
+  
+  
+}
+
+.Unlock_It{
+  animation: Unlock_Keyframes 1s forwards ease;
+}
+
+.Fade_In_Snap_Animation{
+  animation: Fade_In_Snap_Keyframes 0.2s ease forwards;
+}
+
+@keyframes Unlock_Keyframes {
+  to{opacity: 0;}
+}
 
 @keyframes Bouncing_Keyframes {
     0%{transform: scale(1);}
@@ -118,22 +119,13 @@
   100%{filter: opacity(0.4);}
 }
 
-.Fade_In_Snap_Animation{
-  animation: Fade_In_Snap_Keyframes 0.2s ease forwards;
-}
-
-
 @keyframes Fade_In_Snap_Keyframes {
   to{opacity: 1;}
 }
 
-
-
-
 :root{
   --Bottom_Spacer: 5rem;
 }
-
 
 
 
