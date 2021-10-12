@@ -8,19 +8,18 @@ body{
 }
  
 #Main_Panel{
+  --Minimum_Top_Margin: 10px;
   --Aspect_Ratio: calc(2869.85/1734.78);
   --Scaling_Factor: 1;
   --Smallest_Dimension: min(100vh,100vw); 
   --Margin: 5rem;
   --Width: calc(var(--Scaling_Factor)*(100vw - 2*var(--Margin)));
   --Height: calc(var(--Scaling_Factor)*(1/var(--Aspect_Ratio)*var(--Width)));
-
   position: absolute;
   height: var(--Height);
   width: var(--Width);
-  top: calc(50% - var(--Height)/2);
+  top: max(calc(50% - var(--Height)/2),var(--Minimum_Top_Margin));
   left: calc(50% - var(--Width)/2);
-
   background-color: var(--Panel_Colour);
   background-size: cover;
   border-radius: 0.75rem;
