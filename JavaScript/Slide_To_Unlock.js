@@ -3,6 +3,8 @@ function Slide_To_Unlock_Callback(){
   document.getElementById('Slide_Cavity').value = "0";
   document.getElementById('Slide_Cavity').addEventListener("input",Check_Full_Slide);
   document.getElementById('Slide_Cavity').addEventListener("change",Snap_Back);
+  let Unlock_Slider = document.getElementById("Slide_Cavity_Background");
+  Unlock_Slider.classList.add("Hidden");
 }
 
 function Snap_Back(){

@@ -30,7 +30,7 @@
     box-sizing: content-box;
     background: var(--Secondary_Gray);
     outline: none;
-    transition: 0.5s;
+    opacity: 1;
 }
 
 #Slide_To_Unlock_Label{
@@ -52,7 +52,6 @@
   border-radius: 0.5rem;
   background-color: transparent;
   outline: none;
-  transition: 0.5s;
 }
 
 #Slide_Cavity::-webkit-slider-thumb{
@@ -90,9 +89,54 @@
 }
 
 #CYBERTRUCK_KEYPAD{
-  
-  
-  
+  position: fixed;
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  --Spacing: 2vw;
+  grid-gap: var(--Spacing);
+  --Margin: 7vw;
+  --Width: min(calc(100vw - 2*var(--Margin)),65rem);
+  --Height: calc((var(--Width) - 9*var(--Spacing) - 20*var(--Keys_Border_Thickness))/10);
+  height: var(--Height);
+  width: var(--Width);
+  top: max(calc(50% - var(--Height)/2 - 1.2*var(--Bottom_Spacer)),5px);
+  left: calc(50% - var(--Width)/2);
+}
+
+.Keyboard_Keys{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: var(--Keys_Border_Thickness) solid rgb(225,225,225); */
+  font-size: 2.5vw;
+  color: rgb(225,225,225);
+  background: rgb(225,225,225);
+  clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+}
+
+.Keycap_Accents{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --Size: 92%;
+  height: var(--Size);
+  width: var(--Size);
+  color: rgb(225,225,225);
+  background-color: black;
+  clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+}
+
+#Prompt{
+  --Height: 2.7rem;
+  --Width: 15rem;
+  height: var(--Height);
+  width: var(--Width);
+  --Padding: 0.3rem;
+  padding: var(--Padding);
+  position: fixed;
+  left: calc(50% - var(--Width)/2 + var(--Padding)/2);
+  top: calc(100% - var(--Height) - var(--Bottom_Spacer) + var(--Padding)/2);
+  z-index: 2;
 }
 
 .Unlock_It{
@@ -124,9 +168,13 @@
 }
 
 :root{
-  --Bottom_Spacer: 5rem;
+  --Bottom_Spacer: min(5rem,15vh);
+  --Keys_Border_Thickness: 0.2vw;
 }
 
+.Show{
+  opacity: 1;
+}
 
 
 
