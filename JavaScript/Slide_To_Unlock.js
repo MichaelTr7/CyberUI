@@ -17,7 +17,6 @@ function Snap_Back(){
       this.style.backgroundColor = "transparent";
       Slide_To_Unlock_Label.classList.add("Fade_In_Snap_Animation");
   }else{
-    console.log("UNLOCK");
     let Unlock_Modal = document.getElementById('Unlock_Modal');
     Unlock_Modal.classList.add('Unlock_It');
     setTimeout(function () {

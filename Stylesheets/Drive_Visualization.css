@@ -132,7 +132,7 @@
   width: var(--Headlight_Width);
   border-radius: 100%;
   background-color: rgba(255,255,255,0.9);
-  filter: blur(2vw);
+  filter: blur(20px);
   opacity: 1;
 }
 

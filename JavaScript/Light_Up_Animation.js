@@ -107,13 +107,15 @@ function Toggle_Car_Lights(){
   let Functions = ["AUTO","ON","OFF","BED"];
   let Index = parseInt(String(this.id).split("Lights_Button_")[1]) - 1;
   let Light_Function = Functions[Index];
-  let Front_Headlights = document.getElementsByClassName('Headlights');
+  let Front_Headlights = document.getElementsByClassName('Headlights')[0];
     switch(Light_Function) {
     case "AUTO":
       break;
     case "ON":
       break;
     case "OFF":
+      // Front_Headlights.style.filter = "blur(0vw);";
+      // Front_Headlights.style.transform = "translateY(-100vh)";
       break;
     case "BED":
       break;  
@@ -125,11 +127,9 @@ function Toggle_Car_Weight(){
   let Functions = ["LOW","STANDARD","HIGH"];
   let Index = parseInt(String(this.id).split("Lights_Button_")[1]) - 1;
   let Weight_Function = Functions[Index];
-  console.log(Weight_Function);  
 }
 
 function Toggle_Light_Function(){
-  console.log("Toggle light function");
 }
 
 
