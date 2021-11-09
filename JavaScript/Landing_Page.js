@@ -4,7 +4,5 @@ window.onload = function(){
   Slide_To_Unlock_Callback();
   Light_Up_Animation_Callbacks();
   Keypad_Listening();
-  setTimeout(function () {
-    console.clear();
-  }, 200);
+  Detect_Touch_Screen();
 }
