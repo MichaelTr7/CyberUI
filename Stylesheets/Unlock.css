@@ -25,12 +25,14 @@
     padding: var(--Padding);
     position: fixed;
     left: calc(50% - var(--Width)/2 + var(--Padding)/2);
-    top: calc(100% - var(--Height) - var(--Bottom_Spacer) + var(--Padding)/2);
+    /* top: calc(100% - var(--Height) - var(--Bottom_Spacer) + var(--Padding)/2); */
+    top: calc(100% + var(--Padding));
     border-radius: 0.5rem;
     box-sizing: content-box;
     background: var(--Secondary_Gray);
     outline: none;
-    opacity: 1;
+    opacity: 0;
+    transition: 0.3s;
 }
 
 #Slide_To_Unlock_Label{
@@ -52,6 +54,9 @@
   border-radius: 0.5rem;
   background-color: transparent;
   outline: none;
+  opacity: 0;
+  transition: 1s;
+  transition-delay: 0.15s;
 }
 
 #Slide_Cavity::-webkit-slider-thumb{
@@ -107,11 +112,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: var(--Keys_Border_Thickness) solid rgb(225,225,225); */
   font-size: 2.5vw;
-  color: rgb(225,225,225);
-  background: rgb(225,225,225);
+  color: rgba(225,225,225,0.3);
+  background: rgba(225,225,225,0.3);
   clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+  transition: 0.2s;
 }
 
 .Keycap_Accents{
@@ -121,14 +126,15 @@
   --Size: 92%;
   height: var(--Size);
   width: var(--Size);
-  color: rgb(225,225,225);
+  color: rgba(225,225,225,0.3);
   background-color: black;
   clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
 }
 
-#Prompt{
+.Prompt{
+  display: flex;
   --Height: 2.7rem;
-  --Width: 15rem;
+  --Width: 20rem;
   height: var(--Height);
   width: var(--Width);
   --Padding: 0.3rem;
@@ -137,6 +143,14 @@
   left: calc(50% - var(--Width)/2 + var(--Padding)/2);
   top: calc(100% - var(--Height) - var(--Bottom_Spacer) + var(--Padding)/2);
   z-index: 2;
+  text-align: center;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.Prompt_Vanish{
+  display: none;
 }
 
 .Unlock_It{
@@ -176,13 +190,64 @@
   opacity: 1;
 }
 
+.Fade_Down_0{
+  transform: translateY(20vh);
+  transition-delay: 0;
+  opacity: 0;
+}
 
+.Fade_Down_1{
+  transform: translateY(20vh);
+  transition-delay: 0.05s;
+  opacity: 0;
+}
 
+.Fade_Down_2{
+  transform: translateY(20vh);
+  transition-delay: 0.1s;
+  opacity: 0;
+}
 
+.Fade_Down_3{
+  transform: translateY(20vh);
+  transition-delay: 0.15s;
+  opacity: 0;
+}
 
-
-
-
+.Fade_Down_4{
+  transform: translateY(20vh);
+  transition-delay: 0.2s;
+  opacity: 0;
+}
   
+.Fade_Down_5{
+  transform: translateY(20vh);
+  transition-delay: 0.25s;
+  opacity: 0;
+}  
+
+.Fade_Down_6{
+  transform: translateY(20vh);
+  transition-delay: 0.3s;
+  opacity: 0;
+}
+  
+.Fade_Down_7{
+  transform: translateY(20vh);
+  transition-delay: 0.35s;
+  opacity: 0;
+}  
+  
+.Fade_Down_8{
+  transform: translateY(20vh);
+  transition-delay: 0.4s;
+  opacity: 0;
+}  
+  
+.Fade_Down_9{
+  transform: translateY(20vh);
+  transition-delay: 0.45s;
+  opacity: 0;
+}  
   
   
