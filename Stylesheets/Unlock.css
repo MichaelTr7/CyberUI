@@ -147,13 +147,13 @@ body{
 .Prompt{
   display: flex;
   --Height: 2.7rem;
-  --Width: 20rem;
+  --Width: 90vw;
   height: var(--Height);
   width: var(--Width);
   --Padding: 0.3rem;
   padding: var(--Padding);
   position: fixed;
-  left: calc(50% - var(--Width)/2 + var(--Padding)/2);
+  left: calc(50% - var(--Width)/2 - 0.3rem);
   top: calc(100% - var(--Height) - var(--Bottom_Spacer) + var(--Padding)/2);
   z-index: 2;
   text-align: center;
@@ -262,5 +262,11 @@ body{
   transition-delay: 0.45s;
   opacity: 0;
 }  
+  
+.Key_Toggled{
+  background-color: rgba(255,255,255,0.9);
+}
+  
+
   
   
