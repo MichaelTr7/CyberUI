@@ -5,8 +5,11 @@ var Character_Index = 0;
 
 function Keypad_Listening(){
   Current_Letter = Key_Phrase.pop();
-  // Listen for CYBERTRUCK characters  
   document.addEventListener("keydown",Hot_Key_Pressed);
+  let Keyboard_Caps = document.getElementsByClassName("Keyboard_Keys");
+  for(Index = 0; Index < Keyboard_Caps.length; Index++){
+    Keyboard_Caps[Index].addEventListener("click",Hot_Key_Clicked);
+  }
 
 }
 
@@ -24,6 +27,28 @@ function Hot_Key_Pressed(e){
           Show_Unlock_Slider();
       }
 }
+
+function Hot_Key_Clicked(){
+  let Keypad = document.getElementsByClassName("Keyboard_Keys");
+  for(Index = 0; Index < Keypad.length; Index++){
+    let Key = Keypad[Index].children[0];
+    console.log(Key.style.backgroundColor);
+    
+    
+    console.log();
+
+    
+    
+  }
+  
+  
+  
+  
+  
+}
+
+
+
 
 function Highlight_Key(Target_Key){
   Target_Key.classList.add("Key_Toggled");
@@ -66,6 +91,7 @@ function Show_Unlock_Slider(){
     Keyboard_Keys[9].classList.add("Fade_Down_9");
   }, 50);
   document.removeEventListener("keydown",Hot_Key_Pressed);
+  document.getElementById("Cybertruck_Model_Container").style.opacity = 1;
 }
 
 

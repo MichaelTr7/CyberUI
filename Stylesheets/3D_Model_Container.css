@@ -1,0 +1,14 @@
+
+#Cybertruck_Model_Container{
+  position: absolute;
+  background-color: rgb(0,0,0);
+  --Height: 100vh;
+  --Width: 100vw;
+  height: var(--Height);
+  width: var(--Width);
+  box-sizing: border-box;
+  /* border: 2px solid white; */
+  opacity: 0;
+  z-index: -1;
+  transition: 1.5s;
+}
