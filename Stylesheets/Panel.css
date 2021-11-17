@@ -25,7 +25,15 @@ body{
   border-radius: 0.75rem;
   border: 0.1vw solid rgb(38,38,38);
   overflow: hidden;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation: Fade_In_Panel 0.2s forwards;
 }
+
+@keyframes Fade_In_Panel {
+  to{opacity: 1};
+}
+
 
 #Background_Backing{
   display: flex;

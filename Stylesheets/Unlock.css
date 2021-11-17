@@ -18,8 +18,14 @@ body{
   left: calc(50% - 50vw);
   background-color: rgb(0,0,0);
   z-index: 5;
+  opacity: 0;
   opacity: 1;
 }
+
+@keyframes Fade_In{
+  to{filter: blur(0)};
+}
+
 
 #Slide_Cavity_Background{
     display: flex;
@@ -131,6 +137,9 @@ body{
   clip-path: polygon(80% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
   transition: 0.2s;
   transition-property: transform opacity;
+  filter: blur(20rem);
+  animation-delay: 0.2s;
+  animation: Fade_In 1s forwards;
 }
 
 .Keycap_Accents{
@@ -161,6 +170,9 @@ body{
   font-size: 1rem;
   justify-content: center;
   align-items: center;
+  filter: blur(20rem);
+  animation-delay: 0.2s;
+  animation: Fade_In 1s forwards;
 }
 
 .Prompt_Vanish{
