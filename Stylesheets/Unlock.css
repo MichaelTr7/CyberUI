@@ -10,7 +10,6 @@ body{
   width: 100vw;
 }
 
-
 #Unlock_Modal{
   position: fixed;
   height: 100vh;
@@ -25,7 +24,6 @@ body{
 @keyframes Fade_In{
   to{filter: blur(0)};
 }
-
 
 #Slide_Cavity_Background{
     display: flex;

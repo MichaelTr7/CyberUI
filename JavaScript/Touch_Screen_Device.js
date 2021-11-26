@@ -8,7 +8,7 @@ function Detect_Touch_Screen(){
   }
   let Keyboard_Keys = document.getElementsByClassName("Keyboard_Keys");
   for(Index = 0; Index < Keyboard_Keys.length; Index++){
-    Keyboard_Keys[Index].addEventListener("click",Key_Tapped);
+    Keyboard_Keys[Index].addEventListener("mousedown",Key_Tapped);
   }  
 }
 
