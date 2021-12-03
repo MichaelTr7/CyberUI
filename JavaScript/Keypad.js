@@ -69,7 +69,7 @@ function Keypad_Listening(){
   document.addEventListener("keydown",Hot_Key_Pressed);
   let Keyboard_Caps = document.getElementsByClassName("Keyboard_Keys");
   for(Index = 0; Index < Keyboard_Caps.length; Index++){
-    Keyboard_Caps[Index].addEventListener("touchstart",Hot_Key_Clicked, false);
+    Keyboard_Caps[Index].addEventListener("mousedown",Hot_Key_Clicked);
   }
   
 }
