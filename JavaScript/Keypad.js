@@ -3,6 +3,67 @@ var Key_Phrase = ["c","y","b","e","r","t","r","u","c","k"].reverse();
 var Current_Letter = "c";
 var Character_Index = 0; 
 
+function Disable_Touch(){
+  let Touchable_Keyboard_Keys = document.getElementsByClassName("Keyboard_Keys");
+  for(Index = 0; Index < Touchable_Keyboard_Keys.length; Index++){
+    Touchable_Keyboard_Keys[Index].style.pointerEvents = "none";
+    Touchable_Keyboard_Keys[Index].children[0].style.pointerEvents = "none";
+  }
+}
+
+function Hot_Key_Pressed(e){
+console.log("Typed");
+let Typed_Letter = String(e.key).toLowerCase();
+let Keyboard = document.getElementsByClassName("Keyboard_Keys");
+var Scanned_Letter = ""
+if(Typed_Letter == Current_Letter){
+  for(Index = 0; Index < Keyboard.length; Index++){
+    Scanned_Letter = Keyboard[Index].children[0].innerHTML.toLowerCase();
+    if(!Keyboard[Index].classList.contains("Key_Toggled")){
+    if(Scanned_Letter == Current_Letter){
+      let Target_Key = Keyboard[Index];
+      Target_Key.classList.add("Key_Toggled");
+      Target_Key.children[0].style.color = "white";
+      Target_Key.children[0].style.backgroundColor = "rgb(70,70,70)";
+      break;
+    }
+  }
+  }
+}
+Toggle_Count = Update_Key_Phrase();
+if(Toggle_Count == 0){
+  Show_Unlock_Slider();
+}
+}
+
+function Hot_Key_Clicked(){
+console.log("Touched");
+let Target_Key = this;
+Target_Key.classList.add("Key_Toggled");
+Target_Key.children[0].style.color = "white";
+Target_Key.children[0].style.backgroundColor = "rgb(70,70,70)";
+Toggle_Count = Update_Key_Phrase();
+if(Toggle_Count == 0){
+  Show_Unlock_Slider();
+}
+}
+
+function Update_Key_Phrase(){
+  let Updated_Phrase = [];
+  let Keyboard = document.getElementsByClassName("Keyboard_Keys");
+  let Toggle_Count = 0;
+  for(Index = 0; Index < Keyboard.length; Index++){
+    if(!Keyboard[Index].classList.contains("Key_Toggled")){      
+      Updated_Phrase.push(String(Keyboard[Index].children[0].innerHTML.toLowerCase()));
+      Toggle_Count = Toggle_Count + 1;
+    }
+  }
+Key_Phrase = Updated_Phrase.reverse();
+Current_Letter = Key_Phrase.pop(); 
+return parseInt(Toggle_Count);
+}
+
+
 function Keypad_Listening(){
   Current_Letter = Key_Phrase.pop();
   document.addEventListener("keydown",Hot_Key_Pressed);
@@ -10,45 +71,8 @@ function Keypad_Listening(){
   for(Index = 0; Index < Keyboard_Caps.length; Index++){
     Keyboard_Caps[Index].addEventListener("click",Hot_Key_Clicked);
   }
-
-}
-
-function Hot_Key_Pressed(e){
-    if(Key_Phrase != ""){
-      let Key = e.key;
-      if(Key == Current_Letter || Key == Current_Letter.toUpperCase()){
-          Current_Letter = Key_Phrase.pop();
-          let Keyboard = document.getElementsByClassName("Keyboard_Keys");
-          let Target_Key = Keyboard[Character_Index];
-          Highlight_Key(Target_Key);
-          Character_Index++;
-        }
-      }else{
-          Show_Unlock_Slider();
-      }
-}
-
-function Hot_Key_Clicked(){
-  let Keypad = document.getElementsByClassName("Keyboard_Keys");
-  for(Index = 0; Index < Keypad.length; Index++){
-    let Key = Keypad[Index].children[0];
-    console.log(Key.style.backgroundColor);
-    
-    
-    console.log();
-
-    
-    
-  }
-  
-  
-  
-  
   
 }
-
-
-
 
 function Highlight_Key(Target_Key){
   Target_Key.classList.add("Key_Toggled");
