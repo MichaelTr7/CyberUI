@@ -82,6 +82,7 @@ function Highlight_Key(Target_Key){
 
 
 function Show_Unlock_Slider(){
+  document.getElementById("Model_Hide_Shade").style.opacity = 0;
   let Keyboard = document.getElementsByClassName("Keyboard_Keys");
   let Target_Key = Keyboard[Keyboard.length - 1];
   Target_Key.classList.add("Key_Toggled");

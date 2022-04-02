@@ -12,3 +12,50 @@
   z-index: -1;
   transition: 1.5s;
 }
+
+
+#Model_Hide_Shade{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  opacity: 1;
+  transition: 1s;
+  z-index: -1;
+}
+
+/* Outer Box */
+#Outer_Boundary{
+  position: absolute;
+  display: block;
+  --Height: 50vh;
+  --Width: 70vh;
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(40% - var(--Height)/2);
+  left: calc(50% - var(--Width)/2);
+  background-color: black;
+  border-radius: 20px;
+  z-index: -5;
+}
+
+/* Inner Box */
+.Inner_Boundary {
+  position: relative;
+  display: block;
+  --Height: 95%;
+  --Width: 95%;
+  height: var(--Height);
+  width: var(--Width);
+  top: calc(50% - var(--Height)/2);
+  left: calc(50% - var(--Width)/2);
+}
+
+/* Rendering Canvas */
+canvas {
+  width: 100%; 
+  height: 100%; 
+}
+
+
+
